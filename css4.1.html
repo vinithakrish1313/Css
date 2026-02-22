@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Card</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fixed Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Main Profile Section */
+        .profile-section {
+            position: relative;
+            margin: 100px;
+            width: 80%;
+            max-width: 800px;
+            background: #f3e8e8;
+            padding: 20px;
+            overflow: auto;
+            min-height: 220px;
+        }
+
+        /* Profile Image */
+        .profile-section img {
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        /* Profile Content */
+        .profile-content {
+            overflow: hidden;
+            text-align: center;
+            padding-right: 220px; 
+        }
+
+        /* Contact Info Box */
+        .contact-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 180px;
+            background: #dfe6e9;
+            padding: 15px;
+            text-align: center;
+            border-left: 3px solid #526e8b; 
+            overflow: auto;
+            max-height: 160px;
+        }
+
+        /* Clear float */
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    Company Contact Card
+</div>
+
+<div class="profile-section">
+
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ5s1mYNVl6Xe1qitHG07aQMGlO9Dndqiky8dDMRSniBnGXXW0" alt="Profile Image">
+
+    <div class="profile-content">
+        <h2>Reena</h2>
+        <h4>Marketing Manager</h4>
+        <p>
+           Reena is responsible for overseeing the marketing department and
+            developing strategies to improve brand awareness and company growth.
+        </p>
+    </div>
+
+    <div class="contact-box">
+        <h4>Contact Info</h4>
+        <p>📞 (123-456-7890)</p>
+        <p>✉ reena@company.com</p>
+    </div>
+
+    <div class="clear"></div>
+
+</div>
+
+</body>
+</html>

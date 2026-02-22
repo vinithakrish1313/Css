@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>School Announcement</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Heading */
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Notice Box */
+    .notice-box {
+        position: relative;               
+        background-color: rgb(160, 216, 234);        
+        padding: 40px 20px;               
+        max-width: 700px;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        max-height: 250px;                
+        overflow-y: auto;                
+    }
+
+    /* Floating Image */
+    .notice-box img {
+        float: left;
+        width: 120px;
+        height: 120px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+
+    /* Decorative Badge */
+    .badge {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: rgb(160, 34, 59);
+        color: white;
+        padding: 8px 12px;
+        border-radius: 50%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* Clear float */
+    .clear {
+        clear: both;
+    }
+</style>
+</head>
+<body>
+
+<h1>Important Notice</h1>
+
+<div class="notice-box">
+    <div class="badge">!</div>
+
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweojvO_LOWyrJ4Qt26a-CI_0HawnX6G3xVwbiD_0o4pv8I3o4aHB6ZgXujstdkSIGHQgJEYfnyAPsx-sA5eQZkaPXOSHoZ4jPIrWTNh0TOgKDdz9VSTENV5ycYA-XcToTkAWQx0Ycw=s1360-w1360-h1020-rw" alt="School Notice">
+
+    <p>
+        Dear Students and Parents, please note that the school will be closed this Friday 
+        due to scheduled maintenance work. All classes will resume on Monday as per the 
+        regular timetable. We appreciate your understanding and cooperation.
+    </p>
+
+    <p>
+        Additionally, upcoming examination schedules will be posted next week. Please 
+        ensure that you regularly check the school website for updates and important 
+        announcements.
+    </p>
+
+    <div class="clear"></div>
+</div>
+
+</body>
+</html>
