@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <title>CSS Task</title>
+    <style>
+        /* first line of each paragraph bold */
+        section p::first-line {
+            font-weight: bold;
+        }
+
+        /* first letter red and larger */
+        section p::first-letter {
+            color: red;
+            font-size: 200%;
+        }
+
+        /* Color only the second h3 green using adjacent sibling selector */
+        .container h3 + h3 {
+            color: green;
+        }
+
+        /* Make the first link red */
+        div ul li:first-child a {
+            color: red;
+        }
+
+        /* Normal links blue */
+        a:link {
+            color: blue;
+        }
+
+        /* visited link purple */
+        a:visited {
+            color: purple;
+        }
+
+        /* Hovered links underlined */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Example of combinator: style only direct child paragraphs of section */
+        section > p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section with heading and two paragraphs -->
+    <section>
+        <h2>Chrunchyroll</h2>
+        <p>Crunchyroll is the world's leading dedicated anime streaming service, owned by Sony Group Corporation (joint venture of Sony Pictures Entertainment and Aniplex). It offers a massive library of over 1,000 anime titles, simulcasts, and Crunchyroll Originals, alongside merchandise, games, and news. Primarily, it serves a global audience in 200+ countries with subtitles and dubs. 
+</p>
+        <p>Crunchyroll allows users to stream anime anytime, anywhere on various devices, including smartphones, tablets, gaming consoles, and smart TVs. Premium members enjoy higher-quality streaming and faster access to new episodes.</p>
+    </section>
+
+    <!-- Container with two h3 heading -->
+    <div class="container">
+        <h3>About</h3>
+        <h3>Log In</h3>
+    </div>
+
+    <!-- Div with list -->
+    <div>
+        <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Second Link</a></li>
+            <li><a href="#">Third Link</a></li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
