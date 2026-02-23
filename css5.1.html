@@ -1,0 +1,99 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simple Blog Post</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.blog-post {
+    width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Style first line */
+.blog-post p::first-line {
+    font-weight: bold;
+}
+
+/* Style first letter */
+.blog-post p::first-letter {
+    font-size: 2em;
+    color: darkred;
+}
+
+/* Quote styling */
+blockquote {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 20px 0;
+    font-style: italic;
+    position: relative;
+}
+
+/* Add automatic opening quote */
+blockquote::before {
+    content: "“";
+    font-size: 2em;
+    color: gray;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+
+/* Anchor pseudo-classes */
+a {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
+
+/* Place h4 side by side */
+.subheadings {
+    display: flex;
+    gap: 20px;
+}
+
+/* Adjacent sibling selector for second h4 */
+.subheadings h4 + h4 {
+    color: green;
+}
+</style>
+</head>
+<body>
+
+<div class="blog-post">
+    <h2> Atomic Blog Post</h2>
+    <p><strong>Author:</strong> James Clear</p>
+
+    <p>
+        James Clear is an American author, speaker, and productivity expert best known for his bestselling book Atomic Habits. He is widely recognized for his research-based insights into habits, decision-making, continuous improvement, and personal development.
+        This blog includes the key themes of his works and habits to build a structured and actionable future.Visit <a href="#">The link</a>to see more of his works.
+
+    </p>
+
+    <blockquote>
+            You do not rise to the level of your goals. You fall to the level of your systems.
+    </blockquote>
+
+    <div class="subheadings">
+        <h4>The power of tiny habits</h4>
+        <h4>Four laws of behavior changes</h4>
+    </div>
+</div>
+
+</body>
+</html>
