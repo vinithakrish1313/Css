@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Table</title>
+    <style>
+        table {
+            width:60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            border: 2px solid #333;
+        }
+         
+        /* grey background with text in white */
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+            background-color: grey;
+            color: white;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size:16px;
+        
+        }
+        /* hover indication */
+        .btn:hover {
+            opacity:0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+        </tr>
+        <tr>
+            <td>S001</td>
+            <td>Laptop</td>
+            <td>$800</td>
+        </tr>
+        <tr>
+            <td>S002</td>
+            <td>Smartphone</td>
+            <td>$500</td>
+        </tr>
+        <tr>
+            <td>S003</td>
+            <td>Headphones</td>
+            <td>$120</td>
+        </tr>
+        <tr>
+            <td>S004</td>
+            <td>Smartwatch</td>
+            <td>$45</td>
+        </tr>
+        <tr>
+            <td>S005</td>
+            <td>Wireless keyboard</td>
+            <td>$25</td>
+        </tr>
+    </table>
+
+    <!-- To place the button center -->
+     <!-- by using inline css -->
+    <div style="text-align:center; margin-top:50px;">  
+    <a href="#" class="btn">Click Me</a>
+    </div>
+
+</body>
+</html>
+

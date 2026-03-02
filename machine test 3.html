@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  flex: 1;
+  background:linear-gradient(rgb(202, 202, 243),rgb(254, 226, 174));
+  background-size: cover;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+}
+
+login-box {
+  background: white;
+  padding: 30px;
+  width: 200px;
+  
+}
+
+.login-box h2 {
+  text-align:center;
+  color:#ff6b6b;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  opacity: 0.8;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    display: none; /* Hide image */
+  }
+
+  .right {
+    height: 100vh;
+  }
+}
+
+    </style>
+</head>
+<body>
+    
+  <div class="container">
+  <div class="left"></div>
+
+  <div class="right">
+  <div class="login-box">
+      <h2>Login Form</h2>
+      <label>Email:</label>
+      <input type="email"> <br><br>
+
+      <label>Password:</label>
+      <input type="password"><br><br>
+
+     
+    <input type="checkbox">Remember me
+      <br><br>
+
+     
+      <button>Login</button>
+     
+    </div>
+  </div>
+</div>
+
+
+    
+    
+</body>
+</html>
